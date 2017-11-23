@@ -1,0 +1,7 @@
+{
+  "name": "Chatstorm API",
+  "version": "2.0.0",
+  "dependencies": {
+    "socket.io": "^2.0.4"
+  }
+}
