@@ -11,7 +11,7 @@ io.on('connection', function(socket) {
 
     socket.on('message', function(msg){
     	
-        socket.emit('message', {msg: msg.msg, user: msg.user});
+         io.in(room).emit('message', {msg: msg.msg, user: msg.user});
     });
 
 
