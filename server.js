@@ -38,7 +38,6 @@ io.on('connection', function(socket) {
     socket.on('disconnect', function () {
    
 	    removeUser(users_connected, 'username', socket.username);
-	     console.log('disconect '+users_connected);
 	    io.in(room).emit('users_to_me', {users: users_connected});
 	});
 
